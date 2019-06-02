@@ -13,6 +13,7 @@ impl<T> ArrayStack<T> {
     fn size(&self) -> usize { self.n }
     fn get(&self, i: usize) -> &T { &self.array[i] }
     fn set(&mut self, i: usize, x: T) {
+        // Tを返す方法がよく分からなくて放置
         self.array[i] = x
     }
     fn add(&mut self, x: T) {
